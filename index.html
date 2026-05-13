@@ -57,12 +57,25 @@
       }
 
       .topbar {
+        width: 100%;
+        background: #050706;
+        color: #fff;
+      }
+
+      .topbar::after {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(90deg, #f7941d 0%, #ff0000 52%, #ed1163 100%);
+        content: "";
+      }
+
+      .topbar-inner {
         display: flex;
         align-items: center;
         justify-content: space-between;
         gap: 18px;
-        padding: 22px 0 18px;
-        border-bottom: 1px solid rgba(31, 37, 36, 0.1);
+        padding: 17px 0 15px;
       }
 
       .brand {
@@ -76,13 +89,9 @@
       .mark {
         display: grid;
         width: 132px;
-        height: 40px;
+        height: 36px;
         place-items: center;
-        border: 1px solid rgba(31, 37, 36, 0.16);
-        border-radius: 10px;
-        background: #151b1a;
-        padding: 8px 10px;
-        box-shadow: 0 10px 24px rgba(26, 38, 35, 0.1);
+        padding: 0;
       }
 
       .mark img {
@@ -103,14 +112,14 @@
       }
 
       .brand-subtitle {
-        color: var(--quiet);
+        color: rgba(255, 255, 255, 0.62);
         font-size: 12px;
       }
 
       .share-note {
         max-width: 380px;
         margin: 0;
-        color: var(--muted);
+        color: rgba(255, 255, 255, 0.7);
         font-size: 13px;
         font-weight: 690;
         line-height: 1.4;
@@ -118,7 +127,7 @@
       }
 
       .share-note strong {
-        color: var(--accent-ink);
+        color: #fff;
         font-weight: 820;
       }
 
@@ -436,7 +445,7 @@
           font-size: 28px;
         }
 
-        .topbar {
+        .topbar-inner {
           align-items: flex-start;
           flex-direction: column;
         }
@@ -463,20 +472,22 @@
     </style>
   </head>
   <body>
-    <header class="shell topbar">
-      <a class="brand" href="./" aria-label="Offer Highlights home">
-        <span class="mark" aria-hidden="true">
-          <img src="assets/brand/ni-logo-full.svg" alt="" />
-        </span>
-        <span class="brand-text">
-          <span class="brand-title">Offer Highlights</span>
-          <span class="brand-subtitle">Natural Intelligence stakeholder review</span>
-        </span>
-      </a>
-      <p class="share-note">
-        Shareable page to review mock-ups.<br />
-        <strong>Internal NI review only; do not forward outside the organization.</strong>
-      </p>
+    <header class="topbar">
+      <div class="shell topbar-inner">
+        <a class="brand" href="./" aria-label="Offer Highlights home">
+          <span class="mark" aria-hidden="true">
+            <img src="assets/brand/ni-logo-full.svg" alt="" />
+          </span>
+          <span class="brand-text">
+            <span class="brand-title">Offer Highlights</span>
+            <span class="brand-subtitle">Natural Intelligence stakeholder review</span>
+          </span>
+        </a>
+        <p class="share-note">
+          Shareable page to review mock-ups.<br />
+          <strong>Internal NI review only; do not forward outside the organization.</strong>
+        </p>
+      </div>
     </header>
 
     <main>
