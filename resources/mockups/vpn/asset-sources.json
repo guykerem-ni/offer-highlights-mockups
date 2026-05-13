@@ -1,0 +1,313 @@
+{
+  "created": "2026-05-12",
+  "mockId": "vpn",
+  "sourceVertical": "https://www.top10.com/vpn",
+  "assets": [
+    {
+      "brand": "expressvpn",
+      "role": "brandLogo",
+      "file": "expressvpn/logo.svg",
+      "sourceUrl": "https://www.expressvpn.com/wp-ws-cache/uploads-expressvpn/2026/02/vpn-app-logo.svg",
+      "contentType": "image/svg+xml",
+      "bytes": 973
+    },
+    {
+      "brand": "expressvpn",
+      "role": "heroImage",
+      "file": "expressvpn/hero.png",
+      "sourceUrl": "https://www.expressvpn.com/wp-ws-cache/uploads-expressvpn/2026/04/foreground_mobile-1-375x336.png",
+      "contentType": "image/png",
+      "bytes": 22594
+    },
+    {
+      "brand": "expressvpn",
+      "role": "image",
+      "file": "expressvpn/marketing.jpg",
+      "sourceUrl": "https://www.expressvpn.com/wp-ws-cache/uploads-expressvpn/2026/02/img2.jpg",
+      "contentType": "image/jpeg",
+      "bytes": 13531
+    },
+    {
+      "brand": "expressvpn",
+      "role": "gallery",
+      "file": "expressvpn/location.png",
+      "sourceUrl": "https://www.expressvpn.com/wp-ws-cache/uploads-expressvpn/2025/11/Change_your_location-19581a6ef9c7290333423ed0ee97e3d4.png",
+      "contentType": "image/png",
+      "bytes": 41987
+    },
+    {
+      "brand": "expressvpn",
+      "role": "gallery",
+      "file": "expressvpn/security.png",
+      "sourceUrl": "https://www.expressvpn.com/wp-ws-cache/uploads-expressvpn/2025/11/serious-security-4a466e256a43ce031b3e0ebb0a1dbe28.png",
+      "contentType": "image/png",
+      "bytes": 12666
+    },
+    {
+      "brand": "expressvpn",
+      "role": "gallery",
+      "file": "expressvpn/speed.png",
+      "sourceUrl": "https://www.expressvpn.com/wp-ws-cache/uploads-expressvpn/2025/11/blazing-fast-speeds-4a595e4fa47d35feb138985b25bba633.png",
+      "contentType": "image/png",
+      "bytes": 10541
+    },
+    {
+      "brand": "nordvpn",
+      "role": "heroImage",
+      "file": "nordvpn/hero.svg",
+      "sourceUrl": "https://sb.nordcdn.com/m/1ace66034f4ba2c5/original/girl-tablet-video-md-svg.svg",
+      "contentType": "image/svg+xml",
+      "bytes": 16201
+    },
+    {
+      "brand": "nordvpn",
+      "role": "image",
+      "file": "nordvpn/press-support.svg",
+      "sourceUrl": "https://sb.nordcdn.com/m/9a4e1508ade6360d/original/privacy-nordvpn-collab-man-woman-hifive-md-svg.svg",
+      "contentType": "image/svg+xml",
+      "bytes": 14264
+    },
+    {
+      "brand": "nordvpn",
+      "role": "gallery-fallback-top10",
+      "file": "nordvpn/top10-hero.jpg",
+      "sourceUrl": "https://images.top10.com/f_auto,q_auto/v1/production/product_inspirational_images/uploads/photo/nord-vpn.20190624133100.jpg",
+      "contentType": "image/jpeg",
+      "bytes": 47793
+    },
+    {
+      "brand": "nordvpn",
+      "role": "gallery-fallback-top10",
+      "file": "nordvpn/top10-logo.png",
+      "sourceUrl": "https://images.top10.com/f_auto,q_auto/v1/production/products/uploads/photo/nordvpn.20181008120708.png",
+      "contentType": "image/png",
+      "bytes": 3682
+    },
+    {
+      "brand": "norton-vpn",
+      "role": "brandLogo",
+      "file": "norton-vpn/logo.svg",
+      "sourceUrl": "https://us.norton.com/content/dam/norton/logo/logo_norton_d.svg",
+      "contentType": "image/svg+xml",
+      "bytes": 7677
+    },
+    {
+      "brand": "norton-vpn",
+      "role": "heroImage",
+      "file": "norton-vpn/hero.jpg",
+      "sourceUrl": "https://us.norton.com/content/dam/norton/backgrounds/hero/img_VPN_hero_d_x2.jpg",
+      "contentType": "image/jpeg",
+      "bytes": 332431
+    },
+    {
+      "brand": "norton-vpn",
+      "role": "heroImage-crop",
+      "file": "norton-vpn/hero-vpn-ui.jpg",
+      "sourceUrl": "https://us.norton.com/content/dam/norton/features/en/VPN_stream_content_d_x2_2.jpg",
+      "sourceFile": "norton-vpn/stream-content.jpg",
+      "crop": {
+        "left": 1240,
+        "top": 245,
+        "width": 1280,
+        "height": 660
+      },
+      "contentType": "image/jpeg",
+      "bytes": 43078
+    },
+    {
+      "brand": "norton-vpn",
+      "role": "image",
+      "file": "norton-vpn/map.jpg",
+      "sourceUrl": "https://us.norton.com/content/dam/norton/backgrounds/img_vpn_map_d_x2.jpg",
+      "contentType": "image/jpeg",
+      "bytes": 53981
+    },
+    {
+      "brand": "norton-vpn",
+      "role": "gallery",
+      "file": "norton-vpn/easy-to-use.jpg",
+      "sourceUrl": "https://us.norton.com/content/dam/norton/features/en/img_VPN__easy_to_user_d_x2.jpg",
+      "contentType": "image/jpeg",
+      "bytes": 109837
+    },
+    {
+      "brand": "norton-vpn",
+      "role": "gallery",
+      "file": "norton-vpn/advanced-protection.jpg",
+      "sourceUrl": "https://us.norton.com/content/dam/norton/features/en/img_VPN_advanced_protection_d_x2.jpg",
+      "contentType": "image/jpeg",
+      "bytes": 125138
+    },
+    {
+      "brand": "norton-vpn",
+      "role": "gallery",
+      "file": "norton-vpn/stream-content.jpg",
+      "sourceUrl": "https://us.norton.com/content/dam/norton/features/en/VPN_stream_content_d_x2_2.jpg",
+      "contentType": "image/jpeg",
+      "bytes": 73385
+    },
+    {
+      "brand": "surfshark",
+      "role": "brandLogo",
+      "file": "surfshark/logo.svg",
+      "sourceUrl": "https://surfshark.com/wp-content/themes/surfshark/assets/img/logos/logo.svg",
+      "contentType": "image/svg+xml",
+      "bytes": 5852
+    },
+    {
+      "brand": "surfshark",
+      "role": "heroImage",
+      "file": "surfshark/hero.webp",
+      "sourceUrl": "https://surfshark.com/website/_next/image?url=/website/_next/public/home/images/hero/hero-en.png&w=2560&q=75",
+      "contentType": "image/webp",
+      "bytes": 99408
+    },
+    {
+      "brand": "surfshark",
+      "role": "image",
+      "file": "surfshark/vpn-main.webp",
+      "sourceUrl": "https://surfshark.com/website/_next/image?url=/website/_next/public/_shared/images/reusable/vpn-section-main.png&w=2560&q=75",
+      "contentType": "image/webp",
+      "bytes": 131550
+    },
+    {
+      "brand": "surfshark",
+      "role": "gallery",
+      "file": "surfshark/experience.svg",
+      "sourceUrl": "https://surfshark.com/website/_next/public/_shared/images/reusable/vpn-section-experience.svg",
+      "contentType": "image/svg+xml",
+      "bytes": 4628
+    },
+    {
+      "brand": "surfshark",
+      "role": "gallery",
+      "file": "surfshark/speed.svg",
+      "sourceUrl": "https://surfshark.com/website/_next/public/_shared/images/reusable/vpn-section-speed.svg",
+      "contentType": "image/svg+xml",
+      "bytes": 5375
+    },
+    {
+      "brand": "surfshark",
+      "role": "gallery",
+      "file": "surfshark/countries.svg",
+      "sourceUrl": "https://surfshark.com/website/_next/public/_shared/images/reusable/vpn-section-countries.svg",
+      "contentType": "image/svg+xml",
+      "bytes": 17417
+    },
+    {
+      "brand": "ipvanish",
+      "role": "brandLogo",
+      "file": "ipvanish/logo.svg",
+      "sourceUrl": "https://www.ipvanish.com/wp-content/uploads/2024/06/ipvanish-sm-logo.svg",
+      "contentType": "image/svg+xml",
+      "bytes": 2062
+    },
+    {
+      "brand": "ipvanish",
+      "role": "heroImage",
+      "file": "ipvanish/hero.webp",
+      "sourceUrl": "https://www.ipvanish.com/wp-content/uploads/2026/03/threat-protection-pro-home-hero-1.webp",
+      "contentType": "image/webp",
+      "bytes": 67776
+    },
+    {
+      "brand": "ipvanish",
+      "role": "image",
+      "file": "ipvanish/app-collage.webp",
+      "sourceUrl": "https://www.ipvanish.com/wp-content/uploads/2024/05/ipvanish-app-collage.webp",
+      "contentType": "image/webp",
+      "bytes": 18374
+    },
+    {
+      "brand": "ipvanish",
+      "role": "gallery",
+      "file": "ipvanish/mobile-map.webp",
+      "sourceUrl": "https://www.ipvanish.com/wp-content/uploads/2026/02/mobile-map-1024x845.webp",
+      "contentType": "image/webp",
+      "bytes": 50982
+    },
+    {
+      "brand": "ipvanish",
+      "role": "gallery",
+      "file": "ipvanish/learn-how.png",
+      "sourceUrl": "https://www.ipvanish.com/wp-content/uploads/2023/08/learn-how-img.png",
+      "contentType": "image/png",
+      "bytes": 21989
+    },
+    {
+      "brand": "ipvanish",
+      "role": "gallery",
+      "file": "ipvanish/os-icons.svg",
+      "sourceUrl": "https://www.ipvanish.com/wp-content/uploads/2024/07/hero-desktop-os-icons.svg",
+      "contentType": "image/svg+xml",
+      "bytes": 22697
+    },
+    {
+      "brand": "proton-vpn",
+      "role": "brandLogo",
+      "file": "proton-vpn/logo.svg",
+      "sourceUrl": "https://vpncdn.protonweb.com/image-transformation/?s=c&image=image/upload/v1776940263/static/logos/vpn/vpn-badge.svg",
+      "contentType": "image/svg+xml",
+      "bytes": 1275
+    },
+    {
+      "brand": "proton-vpn",
+      "role": "heroImage",
+      "file": "proton-vpn/hero.png",
+      "sourceUrl": "https://vpncdn.protonweb.com/image-transformation/?s=a&image=proton_vpn_one_vpn_limitless_possibilities_1fbfebb9d7.png&width=768&height=352",
+      "contentType": "image/png",
+      "bytes": 46413
+    },
+    {
+      "brand": "proton-vpn",
+      "role": "image",
+      "file": "proton-vpn/streaming.png",
+      "sourceUrl": "https://vpncdn.protonweb.com/image-transformation/?s=a&image=proton_vpn_streaming_0218b9a88b.png&width=768&height=740",
+      "contentType": "image/png",
+      "bytes": 119323
+    },
+    {
+      "brand": "proton-vpn",
+      "role": "gallery",
+      "file": "proton-vpn/no-logs.png",
+      "sourceUrl": "https://vpncdn.protonweb.com/image-transformation/?s=a&image=proton_vpn_no_logs_privacy_8b161d4606.png&width=550&height=309",
+      "contentType": "image/png",
+      "bytes": 22881
+    },
+    {
+      "brand": "proton-vpn",
+      "role": "gallery",
+      "file": "proton-vpn/browser-extensions.png",
+      "sourceUrl": "https://vpncdn.protonweb.com/image-transformation/?s=a&image=proton_vpn_browser_extensions_730b28d7b4.png&width=550&height=309",
+      "contentType": "image/png",
+      "bytes": 27427
+    },
+    {
+      "brand": "proton-vpn",
+      "role": "gallery",
+      "file": "proton-vpn/mobile-device.png",
+      "sourceUrl": "https://vpncdn.protonweb.com/image-transformation/?s=a&image=proton_vpn_use_on_mobile_device_4dca171e8d.png&width=550&height=309",
+      "contentType": "image/png",
+      "bytes": 16938
+    },
+    {
+      "brand": "nordvpn",
+      "role": "brandLogo",
+      "file": "nordvpn/logo.svg",
+      "sourceUrl": "https://s1.nordcdn.com/nord/misc/0.3.0/vpn/brand/Logotype.zip#SVG/logo_vertical-original.svg",
+      "contentType": "image/svg+xml",
+      "bytes": 2575
+    },
+    {
+      "brand": "nordvpn",
+      "role": "gallery",
+      "file": "nordvpn/logo-horizontal.svg",
+      "sourceUrl": "https://s1.nordcdn.com/nord/misc/0.3.0/vpn/brand/Logotype.zip#SVG/logo_horizontal-original.svg",
+      "contentType": "image/svg+xml",
+      "bytes": 2876
+    }
+  ],
+  "notes": [
+    "NordVPN homepage assets were Cloudflare-protected for direct curl capture; used official Nord CDN press/logotype assets plus Top10 provider artwork as clearly labeled gallery fallback."
+  ]
+}

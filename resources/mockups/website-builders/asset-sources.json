@@ -1,0 +1,50 @@
+{
+  "wix/hero.jpg": {
+    "source": "https://www.wix.com/ — hero image asset",
+    "bytes": 48201
+  },
+  "wix/logo.ico": {
+    "source": "https://www.wix.com/favicon.ico",
+    "bytes": 3477
+  },
+  "squarespace/hero.webp": {
+    "source": "https://www.squarespace.com/website-creation — hero device image",
+    "bytes": 54232
+  },
+  "squarespace/logo.png": {
+    "source": "https://media-www.sqspcdn.com/logos/apple-touch-icon-180.png",
+    "bytes": 6237
+  },
+  "godaddy/hero.jpg": {
+    "source": "https://img1.wsimg.com/cdnassets/transform/fc524f9d-e34b-44d7-9ab3-d824e96c6083/gd-websitebuilder-marquee-desktop",
+    "bytes": 48920
+  },
+  "godaddy/logo.svg": {
+    "source": "https://apps.tryshiftcdn.com/v2/godaddy/image-color.svg (used because godaddy.com HTML/favicons returned Access Denied from this environment)",
+    "bytes": 3709
+  },
+  "ionos/hero.png": {
+    "source": "https://www.ionos.com/websites/website-builder — Highligh_Stage-WSB-US_v1.png",
+    "bytes": 154063
+  },
+  "ionos/logo.svg": {
+    "source": "https://www.ionos.com/_next/static/media/ionos.d8a1006d.svg",
+    "bytes": 2043
+  },
+  "site123/hero.png": {
+    "source": "https://www.site123.com/ — homepage first-imgp.png",
+    "bytes": 86245
+  },
+  "site123/logo.png": {
+    "source": "https://cdn-cms-s-8-4.f-static.net/manager/websites/site123_website/files/logos/brand_files_2020/Icons/Png/Icon_blue.png",
+    "bytes": 5049
+  },
+  "hostgator/hero.png": {
+    "source": "https://www.hostgator.com/ — homepage Web-hosting1 marketing image",
+    "bytes": 72089
+  },
+  "hostgator/logo.ico": {
+    "source": "https://www.hostgator.com/favicon.ico",
+    "bytes": 15086
+  }
+}

@@ -1,0 +1,194 @@
+{
+  "mockId": "hearing-aids",
+  "capturedAt": "2026-05-12",
+  "sourcePages": [
+    "https://www.top10.com/hearing-aid/comparison",
+    "https://www.jabraenhance.com/",
+    "https://www.hear.com/",
+    "https://audienhearing.com/",
+    "https://www.soundbright.com/",
+    "https://www.oriclehearing.com/",
+    "https://www.eargo.com/hearing-aid-comparison/",
+    "https://www.eargo.com/blog/eargo-news/meet-eargo-8/"
+  ],
+  "assets": [
+    {
+      "file": "jabra-enhance/brand-icon.png",
+      "sourceUrl": "https://images.top10.com/iu/f_auto/q_auto/v1/production/products/uploads/photo/Favicon70x70-2022-Jabra.20221107102145.png"
+    },
+    {
+      "file": "jabra-enhance/logo.png",
+      "sourceUrl": "https://images.top10.com/iu/f_auto/q_auto/v1/production/products/uploads/photo/Logo260x100-2022-Jabra.20221107102139.png"
+    },
+    {
+      "file": "jabra-enhance/hero.jpg",
+      "sourceUrl": "https://www.jabraenhance.com/cdn-cgi/image/width=1920,quality=80,format=jpeg/_next/static/media/hp-hero-main-desktop.983003fa.jpg"
+    },
+    {
+      "file": "jabra-enhance/bundle.jpg",
+      "sourceUrl": "https://www.jabraenhance.com/cdn-cgi/image/width=1080,quality=80,format=auto/_next/static/media/hp-bundle.e7dc4710.jpg"
+    },
+    {
+      "file": "jabra-enhance/select-700.png",
+      "sourceUrl": "https://www.jabraenhance.com/cdn-cgi/image/width=640,quality=80,format=auto/_next/static/media/home-bundle-front.c29cf6b5.png"
+    },
+    {
+      "file": "jabra-enhance/tour-1.jpg",
+      "sourceUrl": "https://www.jabraenhance.com/cdn-cgi/image/width=1080,quality=80,format=auto/_next/static/media/tour1.23008d3d.jpg"
+    },
+    {
+      "file": "jabra-enhance/top10-product.png",
+      "sourceUrl": "https://images.top10.com/iu/f_auto/q_auto/v1/production/product_inspirational_images/uploads/photo/2023_ProductimagesHA_Jabra1.20240103123231.png"
+    },
+    {
+      "file": "hear-com/brand-icon.png",
+      "sourceUrl": "https://images.top10.com/iu/f_auto/q_auto/v1/production/products/uploads/photo/Square_FullColor_Medium.20250122115943.png"
+    },
+    {
+      "file": "hear-com/logo.svg",
+      "sourceUrl": "https://res.cloudinary.com/dhqvlsb3l/image/upload/v1/assets/na/logos/hearcom.svg"
+    },
+    {
+      "file": "hear-com/hero.png",
+      "sourceUrl": "https://res.cloudinary.com/dhqvlsb3l/image/upload/f_auto,q_auto,w_900/v1/assets/na/seo-website/big-innovation.png"
+    },
+    {
+      "file": "hear-com/horizon-devices.jpg",
+      "sourceUrl": "https://res.cloudinary.com/dhqvlsb3l/image/upload/f_auto,fl_lossy,q_auto:eco,w_auto,dpr_auto/v1/assets/na/seo-website/hearcom-ix-double-device.jpg"
+    },
+    {
+      "file": "hear-com/audiologist.jpg",
+      "sourceUrl": "https://res.cloudinary.com/dhqvlsb3l/image/upload/f_auto,fl_lossy,q_auto:eco,w_auto,dpr_auto/v1/assets/na/seo-website/audiologist.jpg"
+    },
+    {
+      "file": "hear-com/consultation.jpg",
+      "sourceUrl": "https://res.cloudinary.com/dhqvlsb3l/image/upload/f_auto,fl_lossy,q_auto:eco,w_auto,dpr_auto/v1/assets/na/seo-website/intro-bg-m-large-new.jpg"
+    },
+    {
+      "file": "hear-com/top10-product.png",
+      "sourceUrl": "https://images.top10.com/iu/f_auto/q_auto/v1/production/product_inspirational_images/uploads/photo/large-8493C8AB-470A-41D1-9018-44A952B4CAD2.20250730085406.png"
+    },
+    {
+      "file": "audien/brand-icon.svg",
+      "sourceUrl": "https://images.top10.com/iu/v1/production/products/uploads/photo/ProductAudienSize100x100-Favicon.20241121152808.svg"
+    },
+    {
+      "file": "audien/logo.svg",
+      "sourceUrl": "https://audienhearing.com/cdn/shop/files/Audien_logo_horizontal_midnight-haze_1.svg?v=1776247148&width=400"
+    },
+    {
+      "file": "audien/hero.png",
+      "sourceUrl": "https://audienhearing.com/cdn/shop/files/hero-d.png?v=1770134092&width=3000"
+    },
+    {
+      "file": "audien/atom-one.png",
+      "sourceUrl": "https://audienhearing.com/cdn/shop/files/Atom_one_product_card_b92d3be5-9cba-4ee4-bfb5-0c75abff94b1.png?v=1747919197&width=538"
+    },
+    {
+      "file": "audien/atom-x.png",
+      "sourceUrl": "https://audienhearing.com/cdn/shop/files/atom_x_b5699e62-8327-46b0-bccb-daa5bd4ccca8.png?v=1764575954&width=538"
+    },
+    {
+      "file": "audien/customer.jpg",
+      "sourceUrl": "https://audienhearing.com/cdn/shop/files/review_img_2.png?v=1748418241&width=900"
+    },
+    {
+      "file": "audien/brand-mission.png",
+      "sourceUrl": "https://audienhearing.com/cdn/shop/files/brand-mission2.png?v=1747902867&width=600"
+    },
+    {
+      "file": "soundbright/brand-icon.png",
+      "sourceUrl": "https://www.soundbright.com/cdn/shop/files/favicon.png?crop=center&height=64&v=1713297227&width=64"
+    },
+    {
+      "file": "soundbright/logo.svg",
+      "sourceUrl": "https://www.soundbright.com/cdn/shop/files/logo.svg?v=1707757869&width=300"
+    },
+    {
+      "file": "soundbright/hero.png",
+      "sourceUrl": "https://cdn.shopify.com/s/files/1/0645/0538/1053/files/Group_41169.png?v=1775755578&width=300&quality=90"
+    },
+    {
+      "file": "soundbright/horizon-pro.png",
+      "sourceUrl": "https://cdn.shopify.com/s/files/1/0645/0538/1053/files/SilverHorizonProw.Case.png?v=1772048496&width=220"
+    },
+    {
+      "file": "soundbright/discovery.png",
+      "sourceUrl": "https://www.soundbright.com/cdn/shop/files/discovery_1.png?v=1718718984&width=300"
+    },
+    {
+      "file": "soundbright/mini.png",
+      "sourceUrl": "https://cdn.shopify.com/s/files/1/0645/0538/1053/files/Mini_140x140_e864022c-323e-4ebe-bc1a-1979239408d0.png?v=1770738120"
+    },
+    {
+      "file": "soundbright/mini-in-hand.png",
+      "sourceUrl": "https://cdn.shopify.com/s/files/1/0645/0538/1053/files/image_193_1.png?v=1766510181&width=250"
+    },
+    {
+      "file": "oricle/brand-icon.png",
+      "sourceUrl": "https://www.oriclehearing.com/cdn/shop/files/oricle-favicon-32x32.png?crop=center&height=64&v=1730328461&width=64"
+    },
+    {
+      "file": "oricle/logo.png",
+      "sourceUrl": "https://images.top10.com/iu/f_auto/q_auto/v1/production/products/uploads/photo/Product_Oricle_Size_300x100-Light-NoBg.20250101090233.png"
+    },
+    {
+      "file": "oricle/hero.jpg",
+      "sourceUrl": "https://cdn.shopify.com/s/files/1/0596/5319/3906/files/gempages_531265816805507883-758580a5-57d9-4b69-8f14-503172916a66_768x.jpg"
+    },
+    {
+      "file": "oricle/top10-product.png",
+      "sourceUrl": "https://images.top10.com/iu/f_auto/q_auto/v1/production/product_inspirational_images/uploads/photo/large-oricle-product-21.20250106080858.png"
+    },
+    {
+      "file": "oricle/product-1.png",
+      "sourceUrl": "https://cdn.shopify.com/s/files/1/0596/5319/3906/files/gempages_531265816805507883-b69339e7-5cdd-4227-b864-ab68cc8e4ee2.png"
+    },
+    {
+      "file": "oricle/product-2.png",
+      "sourceUrl": "https://cdn.shopify.com/s/files/1/0596/5319/3906/files/gempages_531265816805507883-8feb31c9-9206-43e1-a864-0328bf61c0ca.png"
+    },
+    {
+      "file": "oricle/lifestyle.jpg",
+      "sourceUrl": "https://cdn.shopify.com/s/files/1/0596/5319/3906/files/gempages_531265816805507883-e4f4b784-1926-4e13-a76e-6ff5bd171e88.jpg"
+    },
+    {
+      "file": "eargo/logo.png",
+      "sourceUrl": "https://images.top10.com/iu/f_auto/q_auto/v1/production/products/uploads/photo/eargologo.20210810112141.png"
+    },
+    {
+      "file": "eargo/logo-card.png",
+      "sourceUrl": "https://images.top10.com/iu/f_auto/q_auto/v1/production/products/uploads/photo/eargologo.20210810112141.png"
+    },
+    {
+      "file": "eargo/hero.png",
+      "sourceUrl": "https://images.top10.com/iu/f_auto/q_auto/v1/production/product_inspirational_images/uploads/photo/2023_ProductCard_image_Mob_HA_eargo-1.20240103123210.png"
+    },
+    {
+      "file": "eargo/product.png",
+      "sourceUrl": "https://images.top10.com/iu/f_auto/q_auto/v1/production/product_inspirational_images/uploads/photo/2023_ProductCard_image_Mob_HA_eargo-1.20240103123210.png"
+    },
+    {
+      "file": "eargo/charger.png",
+      "sourceUrl": "https://strapi-cms-corporate.s3.us-west-1.amazonaws.com/eargo_8_charger_with_devices_on_top_a45e869f36.png"
+    },
+    {
+      "file": "eargo/eargo-8.jpg",
+      "sourceUrl": "https://strapi-cms-corporate.s3.us-west-1.amazonaws.com/eargo_8_charger_and_devices_fd27755762.jpg"
+    },
+    {
+      "file": "eargo/se-devices.png",
+      "sourceUrl": "https://strapi-cms-corporate.s3.us-west-1.amazonaws.com/eargo_se_devices_facing_left_and_right_5137f4e787.png"
+    },
+    {
+      "file": "eargo/link-devices.jpg",
+      "sourceUrl": "https://strapi-cms-corporate.s3.us-west-1.amazonaws.com/link_by_eargo_devices_facing_left_and_right_03bbfe9b44.jpeg"
+    }
+  ],
+  "fallbacks": [
+    {
+      "brand": "Eargo",
+      "note": "The Eargo comparison page blocked direct command-line fetching with Cloudflare, so the mock uses Top10 product assets plus official Eargo blog/S3 product images."
+    }
+  ]
+}

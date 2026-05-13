@@ -1,0 +1,654 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Microsoft Copilot Offer Highlights - NI Mock-Ups</title>
+    <style>
+      :root {
+        --bg: #f5f6f3;
+        --ink: #1f2524;
+        --muted: #5f6a66;
+        --quiet: #7d8782;
+        --panel: #ffffff;
+        --line: #d9dfda;
+        --line-strong: #b9c3bd;
+        --accent: #0f6b5f;
+        --accent-ink: #063c36;
+        --accent-soft: #dff0eb;
+        --gold: #9f7333;
+        --blue: #345f88;
+        --shadow: 0 16px 44px rgba(26, 38, 35, 0.1);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        color: var(--ink);
+        font-family:
+          "Aptos",
+          "Segoe UI Variable",
+          "Segoe UI",
+          system-ui,
+          sans-serif;
+        background:
+          linear-gradient(90deg, rgba(15, 107, 95, 0.08) 1px, transparent 1px),
+          linear-gradient(180deg, rgba(15, 107, 95, 0.06), transparent 340px),
+          var(--bg);
+        background-size: 72px 72px, auto, auto;
+      }
+
+      a {
+        color: inherit;
+      }
+
+      .shell {
+        width: min(1180px, calc(100% - 36px));
+        margin: 0 auto;
+      }
+
+      .topbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 18px;
+        padding: 22px 0 18px;
+        border-bottom: 1px solid rgba(31, 37, 36, 0.1);
+      }
+
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 11px;
+        min-width: 0;
+        text-decoration: none;
+      }
+
+      .mark {
+        display: grid;
+        width: 34px;
+        height: 34px;
+        place-items: center;
+        border: 1px solid rgba(15, 107, 95, 0.25);
+        border-radius: 8px;
+        background: var(--accent-soft);
+        color: var(--accent-ink);
+        font-size: 13px;
+        font-weight: 800;
+      }
+
+      .brand-text {
+        display: grid;
+        gap: 2px;
+      }
+
+      .brand-title {
+        font-size: 14px;
+        font-weight: 760;
+      }
+
+      .brand-subtitle {
+        color: var(--quiet);
+        font-size: 12px;
+      }
+
+      .nav {
+        display: flex;
+        align-items: center;
+        gap: 9px;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+      }
+
+      .nav a {
+        border: 1px solid transparent;
+        border-radius: 8px;
+        padding: 8px 10px;
+        color: var(--muted);
+        font-size: 13px;
+        font-weight: 680;
+        text-decoration: none;
+      }
+
+      .nav a:hover,
+      .nav a:focus-visible {
+        border-color: var(--line);
+        color: var(--ink);
+        outline: none;
+        background: rgba(255, 255, 255, 0.7);
+      }
+
+      .hero {
+        display: grid;
+        grid-template-columns: minmax(0, 1.05fr) minmax(320px, 0.95fr);
+        gap: 38px;
+        align-items: end;
+        min-height: 520px;
+        padding: 58px 0 42px;
+      }
+
+      .eyebrow {
+        margin: 0 0 14px;
+        color: var(--accent);
+        font-size: 12px;
+        font-weight: 820;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        max-width: 820px;
+        margin: 0;
+        font-size: 84px;
+        line-height: 0.92;
+        letter-spacing: 0;
+        overflow-wrap: anywhere;
+      }
+
+      .lede {
+        max-width: 690px;
+        margin: 24px 0 0;
+        color: var(--muted);
+        font-size: 21px;
+        line-height: 1.45;
+      }
+
+      .hero-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 30px;
+      }
+
+      .button {
+        display: inline-flex;
+        min-height: 42px;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid var(--accent);
+        border-radius: 8px;
+        padding: 10px 14px;
+        background: var(--accent);
+        color: white;
+        font-size: 14px;
+        font-weight: 760;
+        text-decoration: none;
+      }
+
+      .button.secondary {
+        border-color: var(--line-strong);
+        background: rgba(255, 255, 255, 0.72);
+        color: var(--ink);
+      }
+
+      .hero-panel {
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.82);
+        box-shadow: var(--shadow);
+        overflow: hidden;
+      }
+
+      .hero-panel img {
+        display: block;
+        width: 100%;
+        aspect-ratio: 16 / 11;
+        object-fit: cover;
+        object-position: top center;
+        background: #e6ece8;
+      }
+
+      .panel-caption {
+        display: grid;
+        gap: 10px;
+        padding: 15px;
+        border-top: 1px solid var(--line);
+      }
+
+      .caption-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+      }
+
+      .caption-title {
+        margin: 0;
+        font-size: 14px;
+        font-weight: 780;
+      }
+
+      .caption-note {
+        margin: 0;
+        color: var(--quiet);
+        font-size: 13px;
+        line-height: 1.4;
+      }
+
+      .tag {
+        display: inline-flex;
+        min-height: 24px;
+        align-items: center;
+        border: 1px solid rgba(15, 107, 95, 0.2);
+        border-radius: 8px;
+        padding: 3px 8px;
+        background: var(--accent-soft);
+        color: var(--accent-ink);
+        font-size: 11px;
+        font-weight: 780;
+        white-space: nowrap;
+      }
+
+      .section {
+        padding: 34px 0 56px;
+      }
+
+      .section-head {
+        display: grid;
+        grid-template-columns: minmax(0, 0.74fr) minmax(280px, 0.26fr);
+        gap: 28px;
+        align-items: end;
+        margin-bottom: 18px;
+      }
+
+      h2 {
+        margin: 0;
+        font-size: 38px;
+        line-height: 1.04;
+        letter-spacing: 0;
+      }
+
+      .section-copy {
+        margin: 12px 0 0;
+        max-width: 720px;
+        color: var(--muted);
+        font-size: 16px;
+        line-height: 1.55;
+      }
+
+      .status {
+        display: grid;
+        gap: 8px;
+        border-left: 3px solid var(--accent);
+        padding-left: 13px;
+        color: var(--muted);
+        font-size: 13px;
+        line-height: 1.45;
+      }
+
+      .status strong {
+        color: var(--ink);
+      }
+
+      .mock-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+      }
+
+      .mock-card {
+        display: grid;
+        min-height: 100%;
+        grid-template-rows: auto 1fr;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        overflow: hidden;
+        background: var(--panel);
+        color: inherit;
+        text-decoration: none;
+        box-shadow: 0 10px 28px rgba(26, 38, 35, 0.08);
+        transition:
+          transform 160ms ease,
+          border-color 160ms ease,
+          box-shadow 160ms ease;
+      }
+
+      .mock-card:hover,
+      .mock-card:focus-visible {
+        transform: translateY(-2px);
+        border-color: rgba(15, 107, 95, 0.45);
+        outline: none;
+        box-shadow: 0 18px 42px rgba(26, 38, 35, 0.13);
+      }
+
+      .mock-card img {
+        display: block;
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        object-fit: cover;
+        object-position: top center;
+        border-bottom: 1px solid var(--line);
+        background: #e6ece8;
+      }
+
+      .mock-copy {
+        display: grid;
+        gap: 15px;
+        padding: 18px;
+      }
+
+      .mock-title-row {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 14px;
+      }
+
+      h3 {
+        margin: 0;
+        font-size: 21px;
+        line-height: 1.16;
+        letter-spacing: 0;
+      }
+
+      .mock-card p {
+        margin: 0;
+        color: var(--muted);
+        font-size: 14px;
+        line-height: 1.5;
+      }
+
+      .meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 7px;
+      }
+
+      .pill {
+        display: inline-flex;
+        min-height: 24px;
+        align-items: center;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        padding: 3px 8px;
+        color: #4a5551;
+        font-size: 11px;
+        font-weight: 760;
+      }
+
+      .open {
+        color: var(--accent);
+        font-size: 13px;
+        font-weight: 800;
+        white-space: nowrap;
+      }
+
+      .notes {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 14px;
+        margin-top: 20px;
+      }
+
+      .note {
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.68);
+        padding: 16px;
+      }
+
+      .note h3 {
+        margin-bottom: 8px;
+        font-size: 15px;
+      }
+
+      .note p {
+        margin: 0;
+        color: var(--muted);
+        font-size: 13px;
+        line-height: 1.5;
+      }
+
+      footer {
+        padding: 34px 0 44px;
+        border-top: 1px solid rgba(31, 37, 36, 0.1);
+        color: var(--quiet);
+        font-size: 13px;
+        line-height: 1.5;
+      }
+
+      @media (max-width: 880px) {
+        h1 {
+          font-size: 58px;
+          line-height: 0.96;
+        }
+
+        .lede {
+          font-size: 19px;
+        }
+
+        h2 {
+          font-size: 32px;
+        }
+
+        .hero,
+        .section-head {
+          grid-template-columns: 1fr;
+        }
+
+        .hero {
+          min-height: auto;
+          padding-top: 44px;
+        }
+
+        .mock-grid,
+        .notes {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (max-width: 620px) {
+        .shell {
+          width: min(100% - 24px, 1180px);
+        }
+
+        body {
+          overflow-x: hidden;
+        }
+
+        h1 {
+          font-size: 39px;
+          line-height: 1;
+        }
+
+        .lede {
+          font-size: 17px;
+        }
+
+        h2 {
+          font-size: 28px;
+        }
+
+        .topbar {
+          align-items: flex-start;
+          flex-direction: column;
+        }
+
+        .nav {
+          justify-content: flex-start;
+        }
+
+        .hero-actions {
+          flex-direction: column;
+        }
+
+        .button {
+          width: 100%;
+        }
+
+        .mock-title-row {
+          align-items: flex-start;
+          flex-direction: column;
+          gap: 8px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="shell topbar">
+      <a class="brand" href="./" aria-label="Offer Highlights home">
+        <span class="mark">OH</span>
+        <span class="brand-text">
+          <span class="brand-title">Offer Highlights</span>
+          <span class="brand-subtitle">Natural Intelligence stakeholder review</span>
+        </span>
+      </a>
+      <nav class="nav" aria-label="Mock-up shortcuts">
+        <a href="#mockups">Mock-ups</a>
+        <a href="artifacts/mockups/website-builders.html">MVP</a>
+        <a href="artifacts/mockups/hearing-aids.html">Latest vertical</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="shell hero" aria-labelledby="page-title">
+        <div>
+          <p class="eyebrow">Microsoft Copilot commerce exploration</p>
+          <h1 id="page-title">Offer Highlights mock-ups for vertical review</h1>
+          <p class="lede">
+            These static prototypes show how Natural Intelligence comparison experiences could appear inside
+            Microsoft Copilot Offer Highlights, using real vertical data, partner assets, sponsored rows, and
+            comparison-ready offer details.
+          </p>
+          <div class="hero-actions">
+            <a class="button" href="#mockups">View mock-ups</a>
+            <a class="button secondary" href="artifacts/mockups/website-builders.html">Open Website Builders MVP</a>
+          </div>
+        </div>
+
+        <aside class="hero-panel" aria-label="Website Builders preview">
+          <img src="assets/previews/website-builders.png" alt="Preview of the Website Builders Offer Highlights mock-up" />
+          <div class="panel-caption">
+            <div class="caption-row">
+              <p class="caption-title">Interactive static mocks</p>
+              <span class="tag">No backend required</span>
+            </div>
+            <p class="caption-note">
+              Each vertical opens as a self-contained Copilot-style answer with horizontally scrollable offer cards
+              and an offer detail panel.
+            </p>
+          </div>
+        </aside>
+      </section>
+
+      <section class="shell section" id="mockups" aria-labelledby="mockups-title">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Business verticals</p>
+            <h2 id="mockups-title">Four paths into the same Offer Highlights pattern</h2>
+            <p class="section-copy">
+              The first mock-up covers the Website Builders MVP. The other three expand the pattern into service,
+              home, and health-oriented verticals so stakeholders can compare how the concept travels.
+            </p>
+          </div>
+          <div class="status">
+            <strong>Review focus</strong>
+            <span>Placement, data model, partner contribution, sponsored treatment, and non-retail applicability.</span>
+          </div>
+        </div>
+
+        <div class="mock-grid">
+          <a class="mock-card" href="artifacts/mockups/website-builders.html">
+            <img src="assets/previews/website-builders.png" alt="Website Builders mock-up preview" />
+            <div class="mock-copy">
+              <div class="mock-title-row">
+                <h3>Website Builders MVP</h3>
+                <span class="open">Open</span>
+              </div>
+              <p>
+                Website builder partners shown as structured subscription offers inside a Copilot-style answer.
+              </p>
+              <div class="meta">
+                <span class="pill">MVP</span>
+                <span class="pill">Subscription</span>
+                <span class="pill">Partner services</span>
+              </div>
+            </div>
+          </a>
+
+          <a class="mock-card" href="artifacts/mockups/vpn.html">
+            <img src="assets/previews/vpn.png" alt="VPN Services mock-up preview" />
+            <div class="mock-copy">
+              <div class="mock-title-row">
+                <h3>VPN Services</h3>
+                <span class="open">Open</span>
+              </div>
+              <p>
+                VPN providers framed around privacy, security, device coverage, and offer terms.
+              </p>
+              <div class="meta">
+                <span class="pill">Subscription</span>
+                <span class="pill">Security</span>
+                <span class="pill">Comparison</span>
+              </div>
+            </div>
+          </a>
+
+          <a class="mock-card" href="artifacts/mockups/home-security.html">
+            <img src="assets/previews/home-security.png" alt="Home Security mock-up preview" />
+            <div class="mock-copy">
+              <div class="mock-title-row">
+                <h3>Home Security</h3>
+                <span class="open">Open</span>
+              </div>
+              <p>
+                Home security providers presented with kit, monitoring, installation, and promo highlights.
+              </p>
+              <div class="meta">
+                <span class="pill">Subscription</span>
+                <span class="pill">Home services</span>
+                <span class="pill">Offers</span>
+              </div>
+            </div>
+          </a>
+
+          <a class="mock-card" href="artifacts/mockups/hearing-aids.html">
+            <img src="assets/previews/hearing-aids.png" alt="Hearing Aids mock-up preview" />
+            <div class="mock-copy">
+              <div class="mock-title-row">
+                <h3>Hearing Aids</h3>
+                <span class="open">Open</span>
+              </div>
+              <p>
+                Hearing-aid providers shown with trial periods, support models, pricing, and product imagery.
+              </p>
+              <div class="meta">
+                <span class="pill">Retail health</span>
+                <span class="pill">Guided comparison</span>
+                <span class="pill">Support details</span>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="notes" aria-label="Review notes">
+          <section class="note">
+            <h3>What to evaluate</h3>
+            <p>Whether the card, detail panel, and sponsored offer pattern communicates enough value without overloading the Copilot answer.</p>
+          </section>
+          <section class="note">
+            <h3>What is static</h3>
+            <p>The pages are static HTML, CSS, JavaScript, and local assets. There is no live feed, personalization, or backend integration in this package.</p>
+          </section>
+          <section class="note">
+            <h3>What travels</h3>
+            <p>The same renderer supports retail and subscription modes, making it easier to discuss a common data contract across verticals.</p>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <footer class="shell">
+      Prepared for Natural Intelligence stakeholder review. Mock-ups are directional prototypes for discussion,
+      not production Microsoft Copilot surfaces.
+    </footer>
+  </body>
+</html>
