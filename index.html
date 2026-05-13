@@ -107,30 +107,19 @@
         font-size: 12px;
       }
 
-      .nav {
-        display: flex;
-        align-items: center;
-        gap: 9px;
-        flex-wrap: wrap;
-        justify-content: flex-end;
-      }
-
-      .nav a {
-        border: 1px solid transparent;
-        border-radius: 8px;
-        padding: 8px 10px;
+      .share-note {
+        max-width: 380px;
+        margin: 0;
         color: var(--muted);
         font-size: 13px;
-        font-weight: 680;
-        text-decoration: none;
+        font-weight: 690;
+        line-height: 1.4;
+        text-align: right;
       }
 
-      .nav a:hover,
-      .nav a:focus-visible {
-        border-color: var(--line);
-        color: var(--ink);
-        outline: none;
-        background: rgba(255, 255, 255, 0.7);
+      .share-note strong {
+        color: var(--accent-ink);
+        font-weight: 820;
       }
 
       .hero {
@@ -213,56 +202,12 @@
         background: #e6ece8;
       }
 
-      .panel-caption {
-        display: grid;
-        gap: 10px;
-        padding: 15px;
-        border-top: 1px solid var(--line);
-      }
-
-      .caption-row {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 12px;
-      }
-
-      .caption-title {
-        margin: 0;
-        font-size: 14px;
-        font-weight: 780;
-      }
-
-      .caption-note {
-        margin: 0;
-        color: var(--quiet);
-        font-size: 13px;
-        line-height: 1.4;
-      }
-
-      .tag {
-        display: inline-flex;
-        min-height: 24px;
-        align-items: center;
-        border: 1px solid rgba(15, 107, 95, 0.2);
-        border-radius: 8px;
-        padding: 3px 8px;
-        background: var(--accent-soft);
-        color: var(--accent-ink);
-        font-size: 11px;
-        font-weight: 780;
-        white-space: nowrap;
-      }
-
       .section {
         padding: 34px 0 56px;
       }
 
       .section-head {
-        display: grid;
-        grid-template-columns: minmax(0, 0.74fr) minmax(280px, 0.26fr);
-        gap: 28px;
-        align-items: end;
+        max-width: 810px;
         margin-bottom: 18px;
       }
 
@@ -279,20 +224,6 @@
         color: var(--muted);
         font-size: 16px;
         line-height: 1.55;
-      }
-
-      .status {
-        display: grid;
-        gap: 8px;
-        border-left: 3px solid var(--accent);
-        padding-left: 13px;
-        color: var(--muted);
-        font-size: 13px;
-        line-height: 1.45;
-      }
-
-      .status strong {
-        color: var(--ink);
       }
 
       .mock-grid {
@@ -381,6 +312,20 @@
         font-weight: 760;
       }
 
+      .category-pill {
+        border-color: rgba(15, 107, 95, 0.24);
+        background: #dff0eb;
+        color: #063c36;
+        font-weight: 860;
+        text-transform: uppercase;
+      }
+
+      .category-pill.retail {
+        border-color: rgba(159, 115, 51, 0.28);
+        background: #f4ead8;
+        color: #684818;
+      }
+
       .open {
         color: var(--accent);
         font-size: 13px;
@@ -388,29 +333,50 @@
         white-space: nowrap;
       }
 
-      .notes {
-        display: grid;
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-        gap: 14px;
-        margin-top: 20px;
-      }
-
-      .note {
+      .review-brief {
+        margin-top: 36px;
         border: 1px solid var(--line);
         border-radius: 8px;
-        background: rgba(255, 255, 255, 0.68);
-        padding: 16px;
+        background: rgba(255, 255, 255, 0.74);
+        padding: 26px;
+        box-shadow: 0 14px 34px rgba(26, 38, 35, 0.08);
       }
 
-      .note h3 {
+      .review-brief h2 {
+        max-width: 660px;
+      }
+
+      .review-intro {
+        max-width: 790px;
+        margin: 12px 0 0;
+        color: var(--muted);
+        font-size: 16px;
+        line-height: 1.55;
+      }
+
+      .review-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 14px;
+        margin-top: 22px;
+      }
+
+      .review-item {
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: #fffefa;
+        padding: 17px;
+      }
+
+      .review-item h3 {
         margin-bottom: 8px;
-        font-size: 15px;
+        font-size: 16px;
       }
 
-      .note p {
+      .review-item p {
         margin: 0;
         color: var(--muted);
-        font-size: 13px;
+        font-size: 14px;
         line-height: 1.5;
       }
 
@@ -436,18 +402,14 @@
           font-size: 32px;
         }
 
-        .hero,
-        .section-head {
-          grid-template-columns: 1fr;
-        }
-
         .hero {
+          grid-template-columns: 1fr;
           min-height: auto;
           padding-top: 44px;
         }
 
         .mock-grid,
-        .notes {
+        .review-grid {
           grid-template-columns: 1fr;
         }
       }
@@ -479,8 +441,9 @@
           flex-direction: column;
         }
 
-        .nav {
-          justify-content: flex-start;
+        .share-note {
+          max-width: none;
+          text-align: left;
         }
 
         .hero-actions {
@@ -510,11 +473,9 @@
           <span class="brand-subtitle">Natural Intelligence stakeholder review</span>
         </span>
       </a>
-      <nav class="nav" aria-label="Mock-up shortcuts">
-        <a href="#mockups">Mock-ups</a>
-        <a href="artifacts/mockups/website-builders.html">MVP</a>
-        <a href="artifacts/mockups/hearing-aids.html">Latest vertical</a>
-      </nav>
+      <p class="share-note">
+        Shareable page to review mock-ups. <strong>Internal NI review only; do not forward outside the organization.</strong>
+      </p>
     </header>
 
     <main>
@@ -535,16 +496,6 @@
 
         <aside class="hero-panel" aria-label="Website Builders preview">
           <img src="assets/previews/website-builders.png" alt="Preview of the Website Builders Offer Highlights mock-up" />
-          <div class="panel-caption">
-            <div class="caption-row">
-              <p class="caption-title">Interactive static mocks</p>
-              <span class="tag">No backend required</span>
-            </div>
-            <p class="caption-note">
-              Each vertical opens as a self-contained Copilot-style answer with horizontally scrollable offer cards
-              and an offer detail panel.
-            </p>
-          </div>
         </aside>
       </section>
 
@@ -552,15 +503,10 @@
         <div class="section-head">
           <div>
             <p class="eyebrow">Business verticals</p>
-            <h2 id="mockups-title">Four paths into the same Offer Highlights pattern</h2>
+            <h2 id="mockups-title">See what Offer Highlights could look like across NI</h2>
             <p class="section-copy">
-              The first mock-up covers the Website Builders MVP. The other three expand the pattern into service,
-              home, and health-oriented verticals so stakeholders can compare how the concept travels.
+              Our first mock-ups focus on both subscription (WSB, VPN) and retail (Home Security, Hearing Aids) categories.
             </p>
-          </div>
-          <div class="status">
-            <strong>Review focus</strong>
-            <span>Placement, data model, partner contribution, sponsored treatment, and non-retail applicability.</span>
           </div>
         </div>
 
@@ -576,8 +522,7 @@
                 Website builder partners shown as structured subscription offers inside a Copilot-style answer.
               </p>
               <div class="meta">
-                <span class="pill">MVP</span>
-                <span class="pill">Subscription</span>
+                <span class="pill category-pill subscription">Subscription</span>
                 <span class="pill">Partner services</span>
               </div>
             </div>
@@ -594,7 +539,7 @@
                 VPN providers framed around privacy, security, device coverage, and offer terms.
               </p>
               <div class="meta">
-                <span class="pill">Subscription</span>
+                <span class="pill category-pill subscription">Subscription</span>
                 <span class="pill">Security</span>
                 <span class="pill">Comparison</span>
               </div>
@@ -612,7 +557,7 @@
                 Home security providers presented with kit, monitoring, installation, and promo highlights.
               </p>
               <div class="meta">
-                <span class="pill">Subscription</span>
+                <span class="pill category-pill retail">Retail</span>
                 <span class="pill">Home services</span>
                 <span class="pill">Offers</span>
               </div>
@@ -630,7 +575,7 @@
                 Hearing-aid providers shown with trial periods, support models, pricing, and product imagery.
               </p>
               <div class="meta">
-                <span class="pill">Retail health</span>
+                <span class="pill category-pill retail">Retail</span>
                 <span class="pill">Guided comparison</span>
                 <span class="pill">Support details</span>
               </div>
@@ -638,20 +583,32 @@
           </a>
         </div>
 
-        <div class="notes" aria-label="Review notes">
-          <section class="note">
-            <h3>What to evaluate</h3>
-            <p>Whether the card, detail panel, and sponsored offer pattern communicates enough value without overloading the Copilot answer.</p>
-          </section>
-          <section class="note">
-            <h3>What is static</h3>
-            <p>The pages are static HTML, CSS, JavaScript, and local assets. There is no live feed, personalization, or backend integration in this package.</p>
-          </section>
-          <section class="note">
-            <h3>What travels</h3>
-            <p>The same renderer supports retail and subscription modes, making it easier to discuss a common data contract across verticals.</p>
-          </section>
-        </div>
+        <section class="review-brief" aria-labelledby="review-title">
+          <p class="eyebrow">Reviewer guidance</p>
+          <h2 id="review-title">What we want to evaluate with these examples</h2>
+          <p class="review-intro">
+            Use the mock-ups to pressure-test whether Offer Highlights can become a useful NI distribution surface,
+            and what Microsoft would need from us to make the experience practical across categories.
+          </p>
+          <div class="review-grid">
+            <section class="review-item">
+              <h3>Category fit</h3>
+              <p>Which verticals feel natural in a Copilot answer, and where the pattern needs different language for subscription versus retail journeys.</p>
+            </section>
+            <section class="review-item">
+              <h3>Offer data model</h3>
+              <p>Which fields NI should be able to provide reliably: offer copy, merchant details, price framing, eligibility cues, ratings, and supporting assets.</p>
+            </section>
+            <section class="review-item">
+              <h3>Sponsored treatment</h3>
+              <p>Whether the sponsored row is clear, useful, and commercially meaningful without making the recommendation feel less trustworthy.</p>
+            </section>
+            <section class="review-item">
+              <h3>Partner conversation</h3>
+              <p>What questions we should take to Microsoft around placement, contribution workflow, tracking, compliance, and update cadence.</p>
+            </section>
+          </div>
+        </section>
       </section>
     </main>
 
