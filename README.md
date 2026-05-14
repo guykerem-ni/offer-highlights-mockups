@@ -5,7 +5,7 @@ Static stakeholder review site for Natural Intelligence Offer Highlights mock-up
 ## Pages
 
 - `index.html` - stakeholder home page
-- `artifacts/mockups/website-builders.html` - Website Builders MVP
+- `artifacts/mockups/website-builders.html` - Website Builders
 - `artifacts/mockups/vpn.html` - VPN Services
 - `artifacts/mockups/home-security.html` - Home Security
 - `artifacts/mockups/hearing-aids.html` - Hearing Aids
